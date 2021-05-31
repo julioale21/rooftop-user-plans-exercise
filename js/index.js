@@ -1,7 +1,9 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
 Object.defineProperty(exports, "__esModule", { value: true });
 var BasicPlan_1 = __importDefault(require("./src/models/BasicPlan"));
 var FreePlan_1 = __importDefault(require("./src/models/FreePlan"));
@@ -20,7 +22,7 @@ console.log(user);
 console.log("has advertisement: ", user.getPlan().hasAdvertisements());
 console.log("is active plan:", user.isActivePlan());
 if (!user.isActivePlan()) {
-    user.getPlan().renewPlan();
+  user.getPlan().renewPlan();
 }
 console.log("is active plan:", user.isActivePlan());
 user.subscribePlan(premium);
